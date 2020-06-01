@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chat</title>
+</head>
+<style type="text/css">
+	body{
+		background: linear-gradient(to right, #00fbff, #c800ff);
+	}
+</style>
+<body>
+	<div id="ans"></div>
+<input id="venu" type="text" name="">
+<button onclick="concat()">send</button>
+<script type="text/javascript">
+	function concat(){
+		const messageContainer = document.getElementById('ans')
+
+		var word=document.getElementById("venu").value;
+	
+		function appendMessage(word) {
+  const messageElement = document.createElement('div')
+  messageElement.innerText = word
+  messageContainer.append(messageElement)
+}
+appendMessage(word)
+
+		}
+</script>
+</body>
+</html>
